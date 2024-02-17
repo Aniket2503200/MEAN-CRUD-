@@ -1,0 +1,55 @@
+<!-- your-component.component.html -->
+
+<h1>Form : </h1>
+
+<form (ngSubmit)="onSubmit()">
+  <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input type="text" class="form-control" id="name" [(ngModel)]="name" name="name">
+  </div>
+  <div class="mb-3">
+    <label for="fees" class="form-label">Fees</label>
+    <input type="text" class="form-control" id="fees" [(ngModel)]="fees" name="fees">
+  </div>
+  <div class="mb-3">
+    <label for="duration" class="form-label">Duration</label>
+    <input type="text" class="form-control" id="duration" [(ngModel)]="duration" name="duration">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<h1>Delete Activity</h1>
+
+<div class="de">
+  <label>You enter the id whose entry automatically deleted :</label><br>
+  <input #del type="text" name="del" id="del1"><br>
+  <button (click)="deletedata(del.value)">Delete</button>
+  <h1>{{del.value}} entry gets deleted</h1>
+</div>
+
+
+<h1>Update Activity</h1>
+
+<form (ngSubmit)="onUpdate()">
+  <div class="mb-3">
+    <label for="id" class="form-label">Enter ID whose details you want t update : </label>
+    <input type="text" class="form-control" id="id" [(ngModel)]="id" name="id">
+  </div>
+  <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input type="text" class="form-control" id="name" [(ngModel)]="name" name="name">
+  </div>
+  <div class="mb-3">
+    <label for="fees" class="form-label">Fees</label>
+    <input type="text" class="form-control" id="fees" [(ngModel)]="fees" name="fees">
+  </div>
+  <div class="mb-3">
+    <label for="duration" class="form-label">Duration</label>
+    <input type="text" class="form-control" id="duration" [(ngModel)]="duration" name="duration">
+  </div>
+  <button type="submit" class="btn btn-primary">Update</button>
+</form>
+
+
+
+

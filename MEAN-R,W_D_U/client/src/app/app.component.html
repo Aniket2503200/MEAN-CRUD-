@@ -1,0 +1,42 @@
+
+<!-- <button (click)="ReadMessage()">Read</button>
+
+<div *ngIf="showMessage">
+<p>{{ message | json }}</p>
+</div>
+ -->
+
+ <!-- app.component.html -->
+
+
+<h1>Read Operation</h1>
+
+<button (click)="ReadMessage()">Read Message</button>
+
+<div *ngIf="showMessage">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Fees</th>
+        <th>Duration</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of message; let i = index">
+        <td>{{ item._id || item.id }}</td>
+        <td>{{ item.Name || item.name }}</td>
+        <td>{{ item.Fees || item.fees }}</td>
+        <td>{{ item.Duration || item.duration }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<app-write></app-write>
+
+
+
+<router-outlet></router-outlet>

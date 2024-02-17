@@ -1,0 +1,76 @@
+/* Styles for the form */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Styles for the delete activity section */
+.de {
+  margin-top: 20px;
+}
+
+.de label {
+  font-weight: bold;
+}
+
+.de input[type="text"] {
+  width: 200px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.de button {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.de button:hover {
+  background-color: #c82333;
+}
+
+/* Styles for the update activity section */
+.update-form {
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  form {
+    max-width: 300px;
+  }
+
+  .de input[type="text"] {
+    width: 150px;
+  }
+
+  .update-form {
+    max-width: 300px;
+  }
+}
+
